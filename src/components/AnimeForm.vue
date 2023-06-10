@@ -1,7 +1,11 @@
 <template>
   <div>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-      <b-form-group id="input-group-1" label="Title:" label-for="input-1">
+      <b-form-group 
+        id="input-group-1"
+        label="Title :" 
+        label-for="input-1"
+      >
         <b-form-input
           id="input-1"
           v-model="form.title"
@@ -25,7 +29,7 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group id="input-group-3" label="Status:" label-for="input-3">
+      <b-form-group id="input-group-3" label="Status :" label-for="input-3">
         <b-form-select
           id="input-3"
           v-model="form.status"
@@ -34,7 +38,7 @@
         ></b-form-select>
       </b-form-group>
 
-      <b-form-group id="input-group-4" label="Image url:" label-for="input-4">
+      <b-form-group id="input-group-4" label="URL de l'image :" label-for="input-4">
         <b-form-input
           id="input-4"
           v-model="form.imgUrl"

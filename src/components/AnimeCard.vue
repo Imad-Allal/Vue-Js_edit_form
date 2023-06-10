@@ -7,10 +7,10 @@
     style="max-width: 20rem"
     class="mb-2"
   >
-    <b-card-text> Number of episode : {{ anime.episodes }} </b-card-text>
-    <b-card-text> Status : {{ anime.status }} </b-card-text>
+    <b-card-text> Number of episodes: {{ anime.episodes }} </b-card-text>
+    <b-card-text> Status: {{ anime.status }} </b-card-text>
 
-    <b-button href="#" variant="outline-primary">Edit</b-button>
+    <b-button @click="editAnime" variant="outline-primary">Edit</b-button>
   </b-card>
 </template>
 
@@ -27,6 +27,11 @@ export default {
           imgUrl: "",
         };
       },
+    },
+  },
+  methods: {
+    editAnime() {
+      this.$emit("edit-anime", this.anime);
     },
   },
 };
