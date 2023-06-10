@@ -11,12 +11,10 @@
 
 <script>
 import AnimeCards from "@/components/AnimeCards.vue";
-import AnimeEditForm from "@/components/AnimeEditForm.vue";
 
 export default {
   components: {
     AnimeCards,
-    AnimeEditForm,
   },
   data() {
     return {
